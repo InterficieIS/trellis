@@ -12,3 +12,7 @@ vault_wordpress_sites:
     admin_password: admin
     env:
       db_password: avanttic
+  sixpack.test:
+    admin_password: admin
+    env:
+      db_password: sixpack

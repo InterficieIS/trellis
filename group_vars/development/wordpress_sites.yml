@@ -32,3 +32,18 @@ wordpress_sites:
       provider: self-signed
     cache:
       enabled: false
+
+  sixpack.test:
+    site_hosts:
+      - canonical: sixpack.test
+        redirects:
+          - www.sixpack.test
+    local_path: ../sixpack # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: admin@sixpack.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: self-signed
+    cache:
+      enabled: false

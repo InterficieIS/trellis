@@ -8,3 +8,7 @@ vault_wordpress_sites:
     admin_password: admin
     env:
       db_password: linkia
+  avanttic.test:
+    admin_password: admin
+    env:
+      db_password: avanttic

@@ -17,3 +17,18 @@ wordpress_sites:
       provider: self-signed
     cache:
       enabled: false
+
+  avanttic.test:
+    site_hosts:
+      - canonical: avanttic.test
+        redirects:
+          - www.avanttic.test
+    local_path: ../avanttic # path targeting local Bedrock site directory (relative to Ansible root)
+    admin_email: admin@avanttic.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: self-signed
+    cache:
+      enabled: false

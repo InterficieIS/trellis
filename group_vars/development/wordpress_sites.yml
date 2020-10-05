@@ -47,3 +47,16 @@ wordpress_sites:
       provider: self-signed
     cache:
       enabled: false
+
+  linkia-commerce.test:
+    site_hosts:
+      - canonical: linkia-commerce.test
+    local_path: ../linkia-commerce
+    admin_email: admin@linkia.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: true
+      provider: self-signed
+    cache:
+      enabled: false
